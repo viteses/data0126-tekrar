@@ -3,11 +3,25 @@ version: 2
 
 models:
     - name: stg_parcel
+      description: "details of parcel"
       columns:
         - name: parcel_id
           description: id of the parcel
           tests:
             - not_null
             - unique
+    - name: stg_parcel_product
+      description: "products included in parcel"
+      columns:
+        - name: parcel_id
+          description: id of the parcel
+          tests:
+            - not_null
+        - name: quantity
+          description: number of items for a specific product in a parcel
+          tests:
+            - not_null
+            
+
             
       
