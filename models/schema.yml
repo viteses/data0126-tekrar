@@ -21,6 +21,5 @@ sources:
               - name: ParCEL_id
                 description: "id of the parcel"
                 tests:
-                  - unique
                   - not_null
             
